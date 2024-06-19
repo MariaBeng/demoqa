@@ -10,7 +10,7 @@ def test_visible_accordion(browser):
     assert not accordion.elem.visible()
 
 
-def test_visible_accordian_default(browser):
+def test_visible_accordion_default(browser):
     accordion = Accordion(browser)
     accordion.visit()
     assert not accordion.elem2.visible()
