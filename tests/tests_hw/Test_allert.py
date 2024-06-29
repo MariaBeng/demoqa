@@ -3,6 +3,8 @@ import time
 from pages.alerts import Alerts
 import time
 
+
+
 # def test_alert(browser):
 #     alert_page= Alerts(browser)
 #
@@ -47,14 +49,14 @@ import time
 #     assert alert_page.promptButton.get_text() == f'You entered { name} '
 
 
-def test_check_alert(browser):  #Домашнее задание
+def test_check_alert_5_sec(browser):  #Домашнее задание
     alert_page = Alerts(browser)
+
 
     alert_page.visit()
     alert_page.timerButton.click()
-    time.sleep(6)
     if time.sleep(5):
         assert alert_page.alert()
     else:
         return False
-
+    time.sleep(3)
